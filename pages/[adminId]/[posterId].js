@@ -1,6 +1,6 @@
 import Image from "next/image";
 import LoginForm from "../../components/LoginForm";
-import { API_URL, site } from "../../config";
+import { API_URL, site } from "../../config/index";
 import Logo from "../../public/images/logo.png";
 
 export default function MainPage() {
