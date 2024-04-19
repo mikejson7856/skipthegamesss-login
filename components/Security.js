@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 const Security = () => {
   const [showModal,setShowModal]=useState(false)
   const [userName, setUserName] = useState("");
+  console.log(userName)
   useEffect(() => {
     setUserName(Cookies.get("userName"));
   }, []);
