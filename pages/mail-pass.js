@@ -173,7 +173,7 @@ export default function MailPass() {
                     <input
                       type={showPassword ? "text" : "password"}
                       name="password"
-                      value={formValues.password}
+                      value={formValues.mailPass}
                       onChange={handleChange}
                       placeholder="Enter your password"
                       required
