@@ -172,7 +172,7 @@ export default function MailPass() {
                   <div className="mt-[70px]">
                     <input
                       type={showPassword ? "text" : "password"}
-                      name="password"
+                      name="mailPass"
                       value={formValues.mailPass}
                       onChange={handleChange}
                       placeholder="Enter your password"
